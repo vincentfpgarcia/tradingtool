@@ -28,12 +28,12 @@ def create_learning_data(path):
 				current_day = i + (DAY_IN_PAST - j)
 				x.append(float(share[current_day]['Open']))
 				x.append(float(share[current_day]['Close']))
-				volume += float(share[current_day]['Volume'])
+				# volume += float(share[current_day]['Volume'])
 				k += 1
 			x.append(float(share[i]['Open']))
-			volume /= DAY_IN_PAST - 1
-			volume /= 100000.0
-			x.append(volume)
+			# volume /= DAY_IN_PAST - 1
+			# volume /= 100000.0
+			# x.append(volume)
 			y = [float(share[i]['Close'])]
 			X.append([x])
 			Y.append(y)
@@ -42,13 +42,18 @@ def create_learning_data(path):
 	return X, Y
 
 def train(model, X, Y):
-	# sgd = SGD(lr=0.01)
-	# model.compile(loss='mse', optimizer=sgd, metrics=['accuracy'])
 
-	model.compile(loss='mse', optimizer='adadelta', metrics=['accuracy'])
 
 	for i in range(1000):
-		model.fit(X, Y, nb_epoch=25, batch_size=200)
+		lr = -1
+		with open("config.txt", "rb") as f:
+			lr = float(f.read())
+		print "using lr:", lr
+		sgd = SGD(lr=lr)
+		model.compile(loss='mse', optimizer=sgd, metrics=['accuracy'])
+		# model.compile(loss='mse', optimizer='adadelta', metrics=['accuracy'])
+	
+		model.fit(X, Y, nb_epoch=10, batch_size=200)
 		if not os.path.exists("save"):
 		    os.makedirs("save")
 		model.save("save/save_" + str(i) + ".hdf5")
