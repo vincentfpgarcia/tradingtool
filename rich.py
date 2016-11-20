@@ -3,56 +3,43 @@ from yahoo_finance import Share
 import numpy as np
 import sys
 import json
+import random
+import os
 
-import keras
-from keras.models import Sequential, Model
-from keras.layers import Input
-from keras.layers import Dense
 from keras.optimizers import SGD
-from keras.layers.normalization import BatchNormalization
+from models.maxime import create_model
 
-def create_learning_data():
-	data_path = sys.argv[1]
+DAY_IN_PAST = 31
+
+def create_learning_data(path):
 	data = {}
-	with open(data_path, "rb") as f:
+	with open(path, "rb") as f:
 		text = f.read()
 		data = json.loads(text)
 	X = []
 	Y = []
 	for key in data:
 		share = data[key]
-		for i in range(len(share) - 1):
-			prev_open = float(share[i-1]['Open'])
-			prev_close = float(share[i-1]['Close'])
-			current_open = float(share[i]['Open'])
-			current_close = float(share[i]['Close'])
-			current_volume = float(share[i]['Volume'])
-			x = [prev_open, prev_close, current_open, current_volume / 100000.0]
-			y = [current_close]
-			X.append(x)
+		for i in range(len(share) - DAY_IN_PAST):
+			volume = 0
+			x = []
+			k = 1
+			for j in range(DAY_IN_PAST):
+				current_day = i + (DAY_IN_PAST - j)
+				x.append(float(share[current_day]['Open']))
+				x.append(float(share[current_day]['Close']))
+				volume += float(share[current_day]['Volume'])
+				k += 1
+			x.append(float(share[i]['Open']))
+			volume /= DAY_IN_PAST - 1
+			volume /= 100000.0
+			x.append(volume)
+			y = [float(share[i]['Close'])]
+			X.append([x])
 			Y.append(y)
 	X = np.asarray(X)
 	Y = np.asarray(Y)
 	return X, Y
-
-
-
-def create_model():
-	model = Sequential()
-	
-	inputs = Input(shape=(4,))
-	x = inputs
-
-	x = BatchNormalization()(inputs)
-	x = Dense(1000)(x)
-
-	outputs = Dense(1)(x)
-
-	model = Model(input=inputs, output=outputs)
-
-	return model
-
-
 
 def train(model, X, Y):
 	# sgd = SGD(lr=0.01)
@@ -60,26 +47,27 @@ def train(model, X, Y):
 
 	model.compile(loss='mse', optimizer='adadelta', metrics=['accuracy'])
 
-	model.fit(X, Y, nb_epoch=2000, batch_size=100)
-
+	for i in range(1000):
+		model.fit(X, Y, nb_epoch=25, batch_size=200)
+		if not os.path.exists("save"):
+		    os.makedirs("save")
+		model.save("save/save_" + str(i) + ".hdf5")
 
 
 def main():
 	np.random.seed(42)
 
 	print "Creating features vector"
-	X, Y = create_learning_data()
+	X, Y = create_learning_data(sys.argv[1])
+	print "features shape:"
+	print "X:", X.shape
+	print "Y:", Y.shape
 
 	print "Creating model"
 	model = create_model()
 	model.summary()
 	print "Training"
 	train(model, X, Y)
-
-	print X[1:2]
-	print model.predict(X[1:2])
-	print Y[1:2]
-
 
 
 if __name__ == "__main__":

@@ -15,8 +15,11 @@ with open(output_path, "rb") as f:
 		data = json.loads(buff)
 
 for code in compagny_codes:
-	share = Share(code)
-	data[code] = share.get_historical('2015-01-01', '2016-01-01')
+	try:
+		share = Share(code)
+		data[code] = share.get_historical('2015-01-01', '2016-12-31')
+	except:
+		continue
 
 with open(output_path, "wb") as f:
 	f.write(json.dumps(data, indent=4))
