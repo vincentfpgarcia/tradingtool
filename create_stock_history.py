@@ -30,6 +30,8 @@ if __name__ == '__main__':
   data = {}
   for code in stocks:
     print 'Processing ' + code
+    if code=='VIIX':
+      continue
     try:
       share = Share(code)
       data[code] = share.get_historical('2013-01-01', '2016-12-31')
