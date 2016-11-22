@@ -4,106 +4,69 @@ import random
 from datetime import datetime
 
 
+# Parameters
+DAY_IN_PAST   = 31
+TRAINING_SIZE = 0.8
 
+# Load the JSON containing stock history
+json_path = 'data/stock_history.json'
+data      = json.load(open(json_path))
 
-DAY_IN_PAST = 31
+# Set the random seed
+random.seed(datetime.now())
 
+# Declare datasets
+X_train = []
+X_test  = []
+y_train = []
+y_test  = []
 
+# Go through all symbols
+for symbol in data:
 
+  # Ignore VIXX symbol
+  if symbol=='VIIX':
+    continue
 
-if __name__ == '__main__':
-  
-  # a = [1, 2, 3, 4, 5]
-  # print a
+  print 'Processing ' + symbol
 
-  # b = np.array(a)
-  # print b
-  # print b.shape
+  # Values for the considered symbol
+  share = data[symbol]
 
-  # c = b.reshape(1,-1)
-  # print c
-  # print c.shape
+  for curr_day in range(DAY_IN_PAST, len(data[symbol])):
 
-  # d = [c, c, c]
-  # print d
+    # Create the X vector with previous days (open and close) and current days (open)
+    x = []
+    for j in range(1, DAY_IN_PAST):
+      past_day = curr_day - DAY_IN_PAST + j
+      x.append(float(share[past_day]['Open']))
+      x.append(float(share[past_day]['Close']))
+    x.append(float(share[curr_day]['Open']))
 
-  # e = np.array(d)
-  # print e
+    # Create y with current day (close)
+    y = float(share[curr_day]['Close'])
 
-  # d2 = [a,a,a]
-  # print d2
+    # Split randomly training and testing data
+    if random.uniform(0., 1.)<=TRAINING_SIZE:
+      X_train.append(x)
+      y_train.append(y)
+    else:
+      X_test.append(x)
+      y_test.append(y)
 
-  # e2 = np.array(d2)
-  # print e2
-  # print e2.shape
+# Convert lists as numpy arrays
+X_train = np.array(X_train)
+X_test  = np.array(X_test)
+y_train = np.array(y_train).reshape(-1,1)
+y_test  = np.array(y_test).reshape(-1,1)
 
+# Save training and testing data
+np.save('data/X_train.npy', X_train)
+np.save('data/y_train.npy', y_train)
+np.save('data/X_test.npy', X_test)
+np.save('data/y_test.npy', y_test)
 
-
-
-  json_path = 'stock_history.json'
-
-  training_size = 0.8
-  testing_size  = 1. - training_size
-
-
-
-  data = json.load(open(json_path))
-
-  X_train = 0
-  X_test  = 0
-
-
-
-  random.seed(datetime.now())
-
-
-
-  for stock in data:
-
-    for i in range(0, len(data[stock])-DAY_IN_PAST):
-
-      rd = random.uniform(0., 1.)
-      if rd<=training_size:
-        X_train += 1
-      else:
-        X_test += 1
-
-
-  print 'train : %f' % (float(X_train) / (X_train+X_test))
-  print 'test  : %f' % (float(X_test) / (X_train+X_test))
-
-
-
-
-
-
-
-# def create_learning_data(path):
-#   data = {}
-#   with open(path, "rb") as f:
-#     text = f.read()
-#     data = json.loads(text)
-#   X = []
-#   Y = []
-#   for key in data:
-#     share = data[key]
-#     for i in range(len(share) - DAY_IN_PAST):
-#       volume = 0
-#       x = []
-#       k = 1
-#       for j in range(DAY_IN_PAST):
-#         current_day = i + (DAY_IN_PAST - j)
-#         x.append(float(share[current_day]['Open']))
-#         x.append(float(share[current_day]['Close']))
-#         # volume += float(share[current_day]['Volume'])
-#         k += 1
-#       x.append(float(share[i]['Open']))
-#       # volume /= DAY_IN_PAST - 1
-#       # volume /= 100000.0
-#       # x.append(volume)
-#       y = [float(share[i]['Close'])]
-#       X.append([x])
-#       Y.append(y)
-#   X = np.asarray(X)
-#   Y = np.asarray(Y)
-#   return X, Y
+# print X_train.shape
+# print X_test.shape
+# print y_train.shape
+# print y_test.shape
