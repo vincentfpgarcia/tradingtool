@@ -36,18 +36,17 @@ for symbol in data:
   for curr_day in range(0, len(data[symbol]) - DAY_IN_PAST):
 
     # Create the X vector with previous days (open and close) and current days (open)
-    x = []
-    for j in range(1, DAY_IN_PAST + 1):
-      past_day = curr_day - DAY_IN_PAST + j
-      x.append(float(share[past_day]['Open']))
+    x = [float(share[curr_day]['Open'])]
+    for j in range(1, DAY_IN_PAST+1):
+      past_day = curr_day + j
       x.append(float(share[past_day]['Close']))
-    x.append(float(share[curr_day]['Open']))
+      x.append(float(share[past_day]['Open']))
 
     # Create y with current day (close)
     y = float(share[curr_day]['Close'])
 
     # Split randomly training and testing data
-    if curr_day >= (1.0 - TRAINING_SIZE) * len(data[symbol]):
+    if curr_day >= (1.0 - TRAINING_SIZE) * (len(data[symbol])-1):
       X_train.append([x])
       y_train.append([y])
     else:

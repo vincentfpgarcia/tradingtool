@@ -18,7 +18,7 @@ def main():
 		current_value = current[0][-1]
 
 		prediction = model.predict(X[i:i+1])
-		if prediction[0][0] > current_value * 1.02:
+		if prediction[0][0] > current_value * 1.05:
 			print "---"
 			print "make transaction"
 			print "current money:", money
