@@ -11,42 +11,9 @@ from models.maxime import create_model
 
 DAY_IN_PAST = 31
 
-def create_learning_data(path):
-	data = {}
-	with open(path, "rb") as f:
-		text = f.read()
-		data = json.loads(text)
-	X = []
-	Y = []
-	for key in data:
-		if key == "VIIX":
-			continue
-		share = data[key]
-		for i in range(len(share) - DAY_IN_PAST):
-			volume = 0
-			x = []
-			k = 1
-			for j in range(DAY_IN_PAST):
-				current_day = i + (DAY_IN_PAST - j)
-				x.append(float(share[current_day]['Open']))
-				x.append(float(share[current_day]['Close']))
-				# volume += float(share[current_day]['Volume'])
-				k += 1
-			x.append(float(share[i]['Open']))
-			# volume /= DAY_IN_PAST - 1
-			# volume /= 100000.0
-			# x.append(volume)
-			y = [float(share[i]['Close'])]
-			X.append([x])
-			Y.append(y)
-	X = np.asarray(X)
-	Y = np.asarray(Y)
-	print X.shape
-	print Y.shape
+def create_learning_data():
 	X = np.load("data/X_train.npy")
 	Y = np.load("data/y_train.npy")
-	print X.shape
-	print Y.shape
 	return X, Y
 
 def train(model, X, Y):
@@ -71,7 +38,7 @@ def main():
 	np.random.seed(42)
 
 	print "Creating features vector"
-	X, Y = create_learning_data(sys.argv[1])
+	X, Y = create_learning_data()
 	print "features shape:"
 	print "X:", X.shape
 	print "Y:", Y.shape
