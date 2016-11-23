@@ -19,6 +19,8 @@ def create_learning_data(path):
 	X = []
 	Y = []
 	for key in data:
+		if key == "VIIX":
+			continue
 		share = data[key]
 		for i in range(len(share) - DAY_IN_PAST):
 			volume = 0

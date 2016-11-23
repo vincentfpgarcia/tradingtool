@@ -8,22 +8,24 @@ def create_model():
 	inputs = Input(shape=(1,63))
 	x = inputs
 
-	x = BatchNormalization()(x)
+	# x = BatchNormalization()(x)
 
-	branch = Convolution1D(128, 3, border_mode='same')(x)
-	branch = Activation('relu')(branch)
-	x = merge([x, branch], mode='concat', concat_axis=2)
+	branch1 = Convolution1D(128, 2, border_mode='same')(x)
 
-	branch = Convolution1D(128, 5, border_mode='same')(x)
-	branch = Activation('relu')(branch)
-	x = merge([x, branch], mode='concat', concat_axis=2)
+	branch2 = Convolution1D(128, 7, border_mode='same')(x)
 
-	branch = Convolution1D(128, 7, border_mode='same')(x)
-	branch = Activation('relu')(branch)
-	x = merge([x, branch], mode='concat', concat_axis=2)
+	branch3 = Convolution1D(128, 14, border_mode='same')(x)
 
+	branch4 = Convolution1D(128, 30, border_mode='same')(x)
+
+	x = merge([branch1, branch2, branch3, branch4], mode='concat', concat_axis=2)
 
 	x = Flatten()(x)
+
+	x = Dense(200)(x)
+	x = Dense(200)(x)
+	x = Dense(200)(x)
+	
 	outputs = Dense(1)(x)
 
 	model = Model(input=inputs, output=outputs)
