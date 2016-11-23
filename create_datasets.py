@@ -37,7 +37,7 @@ for symbol in data:
 
     # Create the X vector with previous days (open and close) and current days (open)
     x = []
-    for j in range(1, DAY_IN_PAST):
+    for j in range(1, DAY_IN_PAST + 1):
       past_day = curr_day - DAY_IN_PAST + j
       x.append(float(share[past_day]['Open']))
       x.append(float(share[past_day]['Close']))
@@ -48,11 +48,11 @@ for symbol in data:
 
     # Split randomly training and testing data
     if random.uniform(0., 1.)<=TRAINING_SIZE:
-      X_train.append(x)
-      y_train.append(y)
+      X_train.append([x])
+      y_train.append([y])
     else:
-      X_test.append(x)
-      y_test.append(y)
+      X_test.append([x])
+      y_test.append([y])
 
 # Convert lists as numpy arrays
 X_train = np.array(X_train)

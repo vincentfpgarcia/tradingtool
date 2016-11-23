@@ -41,6 +41,12 @@ def create_learning_data(path):
 			Y.append(y)
 	X = np.asarray(X)
 	Y = np.asarray(Y)
+	print X.shape
+	print Y.shape
+	X = np.load("data/X_train.npy")
+	Y = np.load("data/y_train.npy")
+	print X.shape
+	print Y.shape
 	return X, Y
 
 def train(model, X, Y):
