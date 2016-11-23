@@ -33,7 +33,7 @@ for symbol in data:
   # Values for the considered symbol
   share = data[symbol]
 
-  for curr_day in range(DAY_IN_PAST, len(data[symbol])):
+  for curr_day in range(0, len(data[symbol]) - DAY_IN_PAST):
 
     # Create the X vector with previous days (open and close) and current days (open)
     x = []
@@ -47,7 +47,7 @@ for symbol in data:
     y = float(share[curr_day]['Close'])
 
     # Split randomly training and testing data
-    if random.uniform(0., 1.)<=TRAINING_SIZE:
+    if curr_day >= (1.0 - TRAINING_SIZE) * len(data[symbol]):
       X_train.append([x])
       y_train.append([y])
     else:
@@ -59,6 +59,7 @@ X_train = np.array(X_train)
 X_test  = np.array(X_test)
 y_train = np.array(y_train).reshape(-1,1)
 y_test  = np.array(y_test).reshape(-1,1)
+
 
 # Save training and testing data
 np.save('data/X_train.npy', X_train)
