@@ -21,6 +21,7 @@ def create_model():
 	x = merge([branch1, branch2, branch3, branch4], mode='concat', concat_axis=2)
 
 	x = Flatten()(x)
+	x = Activation('relu')(x)
 
 	x = Dense(200)(x)
 	x = Dense(200)(x)
