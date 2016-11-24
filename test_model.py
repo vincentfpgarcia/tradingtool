@@ -4,7 +4,7 @@ from keras.models import load_model
 import sys
 import random
 import numpy as np
-
+from dataset import create_testing_data
 
 INITIAL_CAPITAL = 10000.0
 PERCENT_OF_CAPITAL_PER_TRANSACTION = 10.0
@@ -12,8 +12,11 @@ TRANSACTION_FEE = 0
 
 def main():
 	model = load_model(sys.argv[1])
-	X = np.load("data/X_test.npy")
-	Y = np.load("data/y_test.npy")
+	X, Y = create_testing_data()
+	print "X shape:", X.shape
+	print "Y shape:", Y.shape
+	# X = np.load("data/X_test.npy")
+	# Y = np.load("data/y_test.npy")
 
 	money = INITIAL_CAPITAL
 
