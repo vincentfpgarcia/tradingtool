@@ -3,6 +3,7 @@ import numpy as np
 import random
 from datetime import datetime
 import os
+import csv
 
 # Paths
 STOCK_HISTORY_PATH = 'data/stock_history.json'
@@ -11,6 +12,21 @@ DATASET_PATH       = 'data/dataset.json'
 # Constants
 DAY_IN_PAST        = 31
 TRAINING_SIZE      = 0.8
+
+
+def get_symbol_list():
+  symbols = []
+  with open('data/companylist.csv', 'rb') as csvfile:
+    reader = csv.reader(csvfile, delimiter=',', quotechar='|')
+    header_skip = False
+    for row in reader:
+      symbol = row[0][1:-1]
+      if not header_skip:
+        header_skip = True
+        continue
+      if symbol!='VIIX':
+        symbols.append(symbol)
+  return sorted(symbols)
 
 
 def create_global_dataset():
@@ -117,6 +133,39 @@ def create_testing_data():
   for i in range(int(len(keys)*TRAINING_SIZE), len(keys)):
     date = keys[i]
     for symbol in data[date].keys():
+      X.append(data[date][symbol]['X'])
+      y.append(data[date][symbol]['y'])
+
+  # Convert as Numpy arrays and reshape for Keras
+  X = np.array(X)
+  y = np.array(y)
+  X = X.reshape(X.shape[0], 1, X.shape[1])
+  y = y.reshape(-1, 1)
+
+  print ' done'
+
+  return X, y
+
+
+
+def create_testing_data_for_symbol(symbol):
+  
+  # Create the global dataset if needed
+  if not os.path.exists(DATASET_PATH):
+    create_global_dataset()
+
+  print 'Creating testing dataset :', 
+
+  # Load the global dataset
+  data = json.load(open('data/dataset.json'))
+  keys = sorted(data.keys())
+
+  # Get X and y data
+  X = []
+  y = []
+  for i in range(int(len(keys)*TRAINING_SIZE), len(keys)):
+    date = keys[i]
+    if symbol in data[date]:
       X.append(data[date][symbol]['X'])
       y.append(data[date][symbol]['y'])
 
