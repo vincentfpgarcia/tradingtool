@@ -5,7 +5,7 @@ from keras.layers import Dense, Convolution1D
 from keras.layers.normalization import BatchNormalization
 
 def create_model():
-	inputs = Input(shape=(1,63))
+	inputs = Input(shape=(1, 63))
 	x = inputs
 
 	# x = BatchNormalization()(x)
