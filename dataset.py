@@ -62,6 +62,7 @@ def create_global_dataset():
         past_day = curr_day + j
         x.insert(0, float(share[past_day]['Close']))
         x.insert(0, float(share[past_day]['Open']))
+        print float(share[past_day]['Open']), float(share[past_day]['Close']), x
 
       # Create y with current day (close)
       y = float(share[curr_day]['Close'])
@@ -178,4 +179,7 @@ def create_testing_data_for_symbol(symbol):
   print ' done'
 
   return X, y
+
+if __name__ == "__main__":
+  create_global_dataset
 

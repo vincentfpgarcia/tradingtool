@@ -9,6 +9,7 @@ from dataset import create_learning_data
 
 from keras.optimizers import SGD
 from models.maxime import create_model
+from keras.models import load_model
 
 
 # def create_learning_data():
@@ -70,7 +71,10 @@ def main():
 	print "Y:", Y.shape
 
 	print "Creating model"
-	model = create_model()
+	if len(sys.argv) >= 2:
+		model = load_model(sys.argv[1])
+	else:
+		model = create_model()
 	model.summary()
 	print "Training"
 	train(model, X, Y)

@@ -18,14 +18,18 @@ def create_model():
 
 	branch4 = Convolution1D(128, 30, border_mode='same')(x)
 
-	x = merge([branch1, branch2, branch3, branch4], mode='concat', concat_axis=2)
+	branch5 = Convolution1D(128, 62, border_mode='same')(x)
+
+	x = merge([branch1, branch2, branch3, branch4, branch5], mode='concat', concat_axis=2)
 
 	x = Flatten()(x)
 	x = Activation('relu')(x)
 
+	x = Dense(300)(x)
 	x = Dense(200)(x)
+	x = Dense(100)(x)
 	x = Dense(200)(x)
-	x = Dense(200)(x)
+	x = Dense(300)(x)
 	
 	outputs = Dense(1)(x)
 

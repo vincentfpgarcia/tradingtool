@@ -21,9 +21,8 @@ def main():
 	money = INITIAL_CAPITAL
 
 	for i in range(len(X)):
-
 		current = X[i]
-		current_value = current[0][0]
+		current_value = current[0][-1]
 
 		prediction = model.predict(X[i:i+1])
 		if prediction[0][0] > current_value * 1.02:
