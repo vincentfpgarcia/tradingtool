@@ -13,6 +13,7 @@ DATASET_PATH       = 'data/dataset.json'
 DAY_IN_PAST        = 31
 TRAINING_SIZE      = 0.8
 
+data = None
 
 def get_symbol_list():
   symbols = []
@@ -147,13 +148,13 @@ def create_testing_data():
   return X, y
 
 def create_testing_data_for_symbol(symbol):
-  
+  global data
   # Create the global dataset if needed
   if not os.path.exists(DATASET_PATH):
     create_global_dataset()
-
   # Load the global dataset
-  data = json.load(open('data/dataset.json'))
+  if data is None:
+    data = json.load(open('data/dataset.json'))
   keys = sorted(data.keys())
 
   # Get X and y data
@@ -177,5 +178,5 @@ def create_testing_data_for_symbol(symbol):
   return X, y
 
 if __name__ == "__main__":
-  create_global_dataset
+  create_global_dataset()
 
