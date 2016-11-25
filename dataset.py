@@ -146,15 +146,11 @@ def create_testing_data():
 
   return X, y
 
-
-
 def create_testing_data_for_symbol(symbol):
   
   # Create the global dataset if needed
   if not os.path.exists(DATASET_PATH):
     create_global_dataset()
-
-  print 'Creating testing dataset :', 
 
   # Load the global dataset
   data = json.load(open('data/dataset.json'))
@@ -169,13 +165,14 @@ def create_testing_data_for_symbol(symbol):
       X.append(data[date][symbol]['X'])
       y.append(data[date][symbol]['y'])
 
+  if len(X) == 0:
+    return [], []
   # Convert as Numpy arrays and reshape for Keras
   X = np.array(X)
   y = np.array(y)
   X = X.reshape(X.shape[0], 1, X.shape[1])
   y = y.reshape(-1, 1)
 
-  print ' done'
 
   return X, y
 
