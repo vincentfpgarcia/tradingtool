@@ -1,13 +1,14 @@
 from dataset import create_testing_data_for_symbol, get_symbol_list
 from keras.models import load_model
 import sys
+import json
 
 INITIAL_CAPITAL = 10000.0
 PERCENT_OF_CAPITAL_PER_TRANSACTION = 10.0
 TRANSACTION_FEE = 0
 
 def compare(x, y):
-	if x[3] < y[3]:
+	if x["accuracy"] < y["accuracy"]:
 		return 1
 	return -1
 
@@ -45,16 +46,22 @@ def main():
 		accuracy = 0 if false_pos+true_pos == 0 else float(true_pos)/float(false_pos+true_pos)
 		print "true pos:", true_pos, "false pos:", false_pos, "accuracy:", accuracy
 
-		gains.append([sym, true_pos, false_pos, accuracy, total_gain, percent_gain])
+		gains.append({
+			"symbol": sym,
+			"true_pos":true_pos,
+			"false_pos":false_pos,
+			"accuracy":accuracy,
+			"total_gain":total_gain,
+			"percent_gain":percent_gain
+			})
 
 	gains.sort(compare)
 	for item in gains:
 		print item
 
+	output = json.dumps(gains, indent=4)
+	with open("data/accuracy.json", "wb") as f:
+		f.write(output)
+
 if __name__ == "__main__":
-	# import dataset
-
-	# X, y = dataset.create_testing_data_for_symbol('CBI')
-
-	# print X
 	main()

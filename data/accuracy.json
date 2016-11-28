@@ -1,0 +1,2106 @@
+[
+    {
+        "total_gain": 1.7602235965750879, 
+        "percent_gain": 0.017602235965741286, 
+        "symbol": "YNDX", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 1.3436345314075879, 
+        "percent_gain": 0.013436345314077336, 
+        "symbol": "VOD", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 3.6799110418032797, 
+        "percent_gain": 0.036799110418028746, 
+        "symbol": "TNP", 
+        "true_pos": 3, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 1.0778128002675658, 
+        "percent_gain": 0.010778128002675302, 
+        "symbol": "SNY", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 0.060827246908957022, 
+        "percent_gain": 0.00060827246908257138, 
+        "symbol": "RENX", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 1.7547998333211581, 
+        "percent_gain": 0.017547998333200532, 
+        "symbol": "QGEN", 
+        "true_pos": 2, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 0.46542553191466141, 
+        "percent_gain": 0.0046542553191475378, 
+        "symbol": "ORAN", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 1.6723814638207841, 
+        "percent_gain": 0.016723814638197609, 
+        "symbol": "NVO", 
+        "true_pos": 3, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 0.61393599688562972, 
+        "percent_gain": 0.0061393599688486233, 
+        "symbol": "NGG", 
+        "true_pos": 2, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 2.621529584588643, 
+        "percent_gain": 0.026215295845877229, 
+        "symbol": "JCI", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 6.8053538915992249, 
+        "percent_gain": 0.068053538915990863, 
+        "symbol": "ICLR", 
+        "true_pos": 2, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 1.2541287542608188, 
+        "percent_gain": 0.012541287542600088, 
+        "symbol": "HSBC", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 0.71587512791302288, 
+        "percent_gain": 0.0071587512791237984, 
+        "symbol": "GSK", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 0.62271064552078315, 
+        "percent_gain": 0.006227106455214404, 
+        "symbol": "DTUS", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 3.0, 
+        "percent_gain": 0.029999999999996696, 
+        "symbol": "DLNG", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 10.726459717008765, 
+        "percent_gain": 0.10726459717009806, 
+        "symbol": "CRTO", 
+        "true_pos": 4, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 2.7401232205338601, 
+        "percent_gain": 0.027401232205348514, 
+        "symbol": "CRH", 
+        "true_pos": 2, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 35.454614274643973, 
+        "percent_gain": 0.35454614274643692, 
+        "symbol": "CPLP", 
+        "true_pos": 8, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 1.7813950977415516, 
+        "percent_gain": 0.017813950977418891, 
+        "symbol": "AZN", 
+        "true_pos": 2, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 4.68943196238979, 
+        "percent_gain": 0.046894319623902447, 
+        "symbol": "AV", 
+        "true_pos": 3, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 0.98852038714903756, 
+        "percent_gain": 0.0098852038714847268, 
+        "symbol": "ASML", 
+        "true_pos": 1, 
+        "false_pos": 0, 
+        "accuracy": 1.0
+    }, 
+    {
+        "total_gain": 31.806274890928762, 
+        "percent_gain": 0.31806274890928687, 
+        "symbol": "OXFD", 
+        "true_pos": 7, 
+        "false_pos": 1, 
+        "accuracy": 0.875
+    }, 
+    {
+        "total_gain": -3.4538497188623296, 
+        "percent_gain": -0.034538497188618678, 
+        "symbol": "ASPS", 
+        "true_pos": 6, 
+        "false_pos": 1, 
+        "accuracy": 0.8571428571428571
+    }, 
+    {
+        "total_gain": 19.809068115000628, 
+        "percent_gain": 0.19809068114999828, 
+        "symbol": "TRIB", 
+        "true_pos": 10, 
+        "false_pos": 2, 
+        "accuracy": 0.8333333333333334
+    }, 
+    {
+        "total_gain": 18.232973797825252, 
+        "percent_gain": 0.18232973797824847, 
+        "symbol": "DTYS", 
+        "true_pos": 5, 
+        "false_pos": 1, 
+        "accuracy": 0.8333333333333334
+    }, 
+    {
+        "total_gain": 6.2243440442816791, 
+        "percent_gain": 0.062243440442810716, 
+        "symbol": "DB", 
+        "true_pos": 4, 
+        "false_pos": 1, 
+        "accuracy": 0.8
+    }, 
+    {
+        "total_gain": 19.39533815437062, 
+        "percent_gain": 0.19395338154371, 
+        "symbol": "RIG", 
+        "true_pos": 11, 
+        "false_pos": 3, 
+        "accuracy": 0.7857142857142857
+    }, 
+    {
+        "total_gain": 0.51830335497288615, 
+        "percent_gain": 0.0051830335497271562, 
+        "symbol": "MHG", 
+        "true_pos": 3, 
+        "false_pos": 1, 
+        "accuracy": 0.75
+    }, 
+    {
+        "total_gain": 17.999171635858147, 
+        "percent_gain": 0.17999171635858513, 
+        "symbol": "LBTYK", 
+        "true_pos": 3, 
+        "false_pos": 1, 
+        "accuracy": 0.75
+    }, 
+    {
+        "total_gain": 17.884487297542364, 
+        "percent_gain": 0.1788448729754144, 
+        "symbol": "LBTYA", 
+        "true_pos": 3, 
+        "false_pos": 1, 
+        "accuracy": 0.75
+    }, 
+    {
+        "total_gain": 4.4625547889336303, 
+        "percent_gain": 0.04462554788933204, 
+        "symbol": "DAC", 
+        "true_pos": 5, 
+        "false_pos": 2, 
+        "accuracy": 0.7142857142857143
+    }, 
+    {
+        "total_gain": -10.316382521792548, 
+        "percent_gain": -0.10316382521792233, 
+        "symbol": "CMRE", 
+        "true_pos": 5, 
+        "false_pos": 2, 
+        "accuracy": 0.7142857142857143
+    }, 
+    {
+        "total_gain": 5.7767592447125935, 
+        "percent_gain": 0.057767592447133254, 
+        "symbol": "BBVA", 
+        "true_pos": 5, 
+        "false_pos": 2, 
+        "accuracy": 0.7142857142857143
+    }, 
+    {
+        "total_gain": 10.356424412297201, 
+        "percent_gain": 0.10356424412296672, 
+        "symbol": "AMRN", 
+        "true_pos": 5, 
+        "false_pos": 2, 
+        "accuracy": 0.7142857142857143
+    }, 
+    {
+        "total_gain": 85.432043416218221, 
+        "percent_gain": 0.85432043416218129, 
+        "symbol": "LIQT", 
+        "true_pos": 29, 
+        "false_pos": 14, 
+        "accuracy": 0.6744186046511628
+    }, 
+    {
+        "total_gain": 6.4845012798741664, 
+        "percent_gain": 0.064845012798731005, 
+        "symbol": "TX", 
+        "true_pos": 4, 
+        "false_pos": 2, 
+        "accuracy": 0.6666666666666666
+    }, 
+    {
+        "total_gain": -0.48007714272898738, 
+        "percent_gain": -0.0048007714272935154, 
+        "symbol": "STO", 
+        "true_pos": 2, 
+        "false_pos": 1, 
+        "accuracy": 0.6666666666666666
+    }, 
+    {
+        "total_gain": 5.4463789402489056, 
+        "percent_gain": 0.054463789402481311, 
+        "symbol": "SAN", 
+        "true_pos": 4, 
+        "false_pos": 2, 
+        "accuracy": 0.6666666666666666
+    }, 
+    {
+        "total_gain": 2.2937790619907901, 
+        "percent_gain": 0.022937790619903531, 
+        "symbol": "NOK", 
+        "true_pos": 2, 
+        "false_pos": 1, 
+        "accuracy": 0.6666666666666666
+    }, 
+    {
+        "total_gain": 2.6620025131232978, 
+        "percent_gain": 0.026620025131229852, 
+        "symbol": "KNOP", 
+        "true_pos": 2, 
+        "false_pos": 1, 
+        "accuracy": 0.6666666666666666
+    }, 
+    {
+        "total_gain": 1.8043014602299081, 
+        "percent_gain": 0.018043014602309171, 
+        "symbol": "IHG", 
+        "true_pos": 2, 
+        "false_pos": 1, 
+        "accuracy": 0.6666666666666666
+    }, 
+    {
+        "total_gain": 7.7189091690670466, 
+        "percent_gain": 0.077189091690677003, 
+        "symbol": "GASS", 
+        "true_pos": 4, 
+        "false_pos": 2, 
+        "accuracy": 0.6666666666666666
+    }, 
+    {
+        "total_gain": 4.2374909743957687, 
+        "percent_gain": 0.04237490974394742, 
+        "symbol": "BT", 
+        "true_pos": 2, 
+        "false_pos": 1, 
+        "accuracy": 0.6666666666666666
+    }, 
+    {
+        "total_gain": 7.3293094533692056, 
+        "percent_gain": 0.073293094533699588, 
+        "symbol": "NE", 
+        "true_pos": 9, 
+        "false_pos": 5, 
+        "accuracy": 0.6428571428571429
+    }, 
+    {
+        "total_gain": 34.192629097733516, 
+        "percent_gain": 0.34192629097733462, 
+        "symbol": "NEON", 
+        "true_pos": 10, 
+        "false_pos": 6, 
+        "accuracy": 0.625
+    }, 
+    {
+        "total_gain": 20.744687241744032, 
+        "percent_gain": 0.20744687241744941, 
+        "symbol": "LXFR", 
+        "true_pos": 3, 
+        "false_pos": 2, 
+        "accuracy": 0.6
+    }, 
+    {
+        "total_gain": 4.6007283865765203, 
+        "percent_gain": 0.04600728386576769, 
+        "symbol": "BCS", 
+        "true_pos": 3, 
+        "false_pos": 2, 
+        "accuracy": 0.6
+    }, 
+    {
+        "total_gain": 5.2190983416821837, 
+        "percent_gain": 0.052190983416822156, 
+        "symbol": "BBL", 
+        "true_pos": 6, 
+        "false_pos": 4, 
+        "accuracy": 0.6
+    }, 
+    {
+        "total_gain": 18.884877514521577, 
+        "percent_gain": 0.1888487751452228, 
+        "symbol": "MT", 
+        "true_pos": 7, 
+        "false_pos": 5, 
+        "accuracy": 0.5833333333333334
+    }, 
+    {
+        "total_gain": 1.1274153486665455, 
+        "percent_gain": 0.011274153486673377, 
+        "symbol": "TI", 
+        "true_pos": 4, 
+        "false_pos": 3, 
+        "accuracy": 0.5714285714285714
+    }, 
+    {
+        "total_gain": -0.7312293781178596, 
+        "percent_gain": -0.007312293781180923, 
+        "symbol": "PUK", 
+        "true_pos": 4, 
+        "false_pos": 3, 
+        "accuracy": 0.5714285714285714
+    }, 
+    {
+        "total_gain": 3.9922665989488451, 
+        "percent_gain": 0.039922665989489126, 
+        "symbol": "MX", 
+        "true_pos": 4, 
+        "false_pos": 3, 
+        "accuracy": 0.5714285714285714
+    }, 
+    {
+        "total_gain": 20.829544987785994, 
+        "percent_gain": 0.20829544987785997, 
+        "symbol": "GSM", 
+        "true_pos": 4, 
+        "false_pos": 3, 
+        "accuracy": 0.5714285714285714
+    }, 
+    {
+        "total_gain": 3.1280880547674315, 
+        "percent_gain": 0.03128088054766831, 
+        "symbol": "EDAP", 
+        "true_pos": 4, 
+        "false_pos": 3, 
+        "accuracy": 0.5714285714285714
+    }, 
+    {
+        "total_gain": -2.8838149648981926, 
+        "percent_gain": -0.028838149648979794, 
+        "symbol": "CSTM", 
+        "true_pos": 8, 
+        "false_pos": 6, 
+        "accuracy": 0.5714285714285714
+    }, 
+    {
+        "total_gain": 12.303856693060879, 
+        "percent_gain": 0.1230385669306111, 
+        "symbol": "DSLV", 
+        "true_pos": 17, 
+        "false_pos": 13, 
+        "accuracy": 0.5666666666666667
+    }, 
+    {
+        "total_gain": 23.151891570320004, 
+        "percent_gain": 0.23151891570321048, 
+        "symbol": "NTZ", 
+        "true_pos": 14, 
+        "false_pos": 11, 
+        "accuracy": 0.56
+    }, 
+    {
+        "total_gain": 78.267985277712796, 
+        "percent_gain": 0.78267985277713503, 
+        "symbol": "DCIX", 
+        "true_pos": 27, 
+        "false_pos": 22, 
+        "accuracy": 0.5510204081632653
+    }, 
+    {
+        "total_gain": 1.3616049854826997, 
+        "percent_gain": 0.013616049854836554, 
+        "symbol": "ESV", 
+        "true_pos": 7, 
+        "false_pos": 6, 
+        "accuracy": 0.5384615384615384
+    }, 
+    {
+        "total_gain": 15.27771377425961, 
+        "percent_gain": 0.15277713774259905, 
+        "symbol": "DLBS", 
+        "true_pos": 7, 
+        "false_pos": 6, 
+        "accuracy": 0.5384615384615384
+    }, 
+    {
+        "total_gain": 75.398424148868799, 
+        "percent_gain": 0.75398424148869214, 
+        "symbol": "OHGI", 
+        "true_pos": 24, 
+        "false_pos": 21, 
+        "accuracy": 0.5333333333333333
+    }, 
+    {
+        "total_gain": 24.374338662531954, 
+        "percent_gain": 0.24374338662531692, 
+        "symbol": "I", 
+        "true_pos": 8, 
+        "false_pos": 7, 
+        "accuracy": 0.5333333333333333
+    }, 
+    {
+        "total_gain": 11.384446020323594, 
+        "percent_gain": 0.11384446020323846, 
+        "symbol": "GWPH", 
+        "true_pos": 8, 
+        "false_pos": 7, 
+        "accuracy": 0.5333333333333333
+    }, 
+    {
+        "total_gain": 14.323982737772894, 
+        "percent_gain": 0.1432398273777391, 
+        "symbol": "DSX", 
+        "true_pos": 11, 
+        "false_pos": 10, 
+        "accuracy": 0.5238095238095238
+    }, 
+    {
+        "total_gain": -1.8385174547838687, 
+        "percent_gain": -0.018385174547841387, 
+        "symbol": "TS", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 0.73964724510187807, 
+        "percent_gain": 0.0073964724510267033, 
+        "symbol": "TOT", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 12.876418864623702, 
+        "percent_gain": 0.1287641886462465, 
+        "symbol": "SQNS", 
+        "true_pos": 6, 
+        "false_pos": 6, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 6.4434432404759718, 
+        "percent_gain": 0.064434432404758546, 
+        "symbol": "RYAAY", 
+        "true_pos": 2, 
+        "false_pos": 2, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": -4.8148572170903208, 
+        "percent_gain": -0.048148572170902959, 
+        "symbol": "RBS", 
+        "true_pos": 5, 
+        "false_pos": 5, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 0.81156981907770387, 
+        "percent_gain": 0.0081156981907692938, 
+        "symbol": "NXPI", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 1.798200496868958, 
+        "percent_gain": 0.017982004968697396, 
+        "symbol": "LYG", 
+        "true_pos": 5, 
+        "false_pos": 5, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": -1.053354208734163, 
+        "percent_gain": -0.01053354208734314, 
+        "symbol": "LUX", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 1.136717643132215, 
+        "percent_gain": 0.011367176431331671, 
+        "symbol": "IR", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 0.50890585241722874, 
+        "percent_gain": 0.005089058524165857, 
+        "symbol": "GRFS", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": -1.6911740610576089, 
+        "percent_gain": -0.016911740610581205, 
+        "symbol": "FMS", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 67.490439373932531, 
+        "percent_gain": 0.67490439373931732, 
+        "symbol": "ESEA", 
+        "true_pos": 18, 
+        "false_pos": 18, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 0.49131073709577322, 
+        "percent_gain": 0.0049131073709629547, 
+        "symbol": "E", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 6.1307199251750717, 
+        "percent_gain": 0.061307199251747768, 
+        "symbol": "DGLD", 
+        "true_pos": 4, 
+        "false_pos": 4, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": -2.1060868524473335, 
+        "percent_gain": -0.021060868524469534, 
+        "symbol": "DFVS", 
+        "true_pos": 2, 
+        "false_pos": 2, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 0.15720741141558392, 
+        "percent_gain": 0.0015720741141533878, 
+        "symbol": "CS", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 0.8727890293339442, 
+        "percent_gain": 0.0087278902933363156, 
+        "symbol": "BP", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 1.1633140926660417, 
+        "percent_gain": 0.011633140926670116, 
+        "symbol": "ALKS", 
+        "true_pos": 2, 
+        "false_pos": 2, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": -3.4716955313306244, 
+        "percent_gain": -0.03471695531330754, 
+        "symbol": "AER", 
+        "true_pos": 1, 
+        "false_pos": 1, 
+        "accuracy": 0.5
+    }, 
+    {
+        "total_gain": 9.2659596425728523, 
+        "percent_gain": 0.092659596425725965, 
+        "symbol": "NMM", 
+        "true_pos": 12, 
+        "false_pos": 13, 
+        "accuracy": 0.48
+    }, 
+    {
+        "total_gain": -5.3411930058628059, 
+        "percent_gain": -0.053411930058633317, 
+        "symbol": "WFT", 
+        "true_pos": 8, 
+        "false_pos": 9, 
+        "accuracy": 0.47058823529411764
+    }, 
+    {
+        "total_gain": 1.0629416532665346, 
+        "percent_gain": 0.010629416532670355, 
+        "symbol": "SDLP", 
+        "true_pos": 8, 
+        "false_pos": 10, 
+        "accuracy": 0.4444444444444444
+    }, 
+    {
+        "total_gain": 27.244853980169864, 
+        "percent_gain": 0.27244853980170625, 
+        "symbol": "SHIP", 
+        "true_pos": 23, 
+        "false_pos": 30, 
+        "accuracy": 0.4339622641509434
+    }, 
+    {
+        "total_gain": -8.5076401374317356, 
+        "percent_gain": -0.085076401374317712, 
+        "symbol": "STX", 
+        "true_pos": 3, 
+        "false_pos": 4, 
+        "accuracy": 0.42857142857142855
+    }, 
+    {
+        "total_gain": 435.70434003064111, 
+        "percent_gain": 4.357043400306404, 
+        "symbol": "GCVRZ", 
+        "true_pos": 57, 
+        "false_pos": 76, 
+        "accuracy": 0.42857142857142855
+    }, 
+    {
+        "total_gain": -2.0035823743710353, 
+        "percent_gain": -0.02003582374371371, 
+        "symbol": "AEG", 
+        "true_pos": 3, 
+        "false_pos": 4, 
+        "accuracy": 0.42857142857142855
+    }, 
+    {
+        "total_gain": 8.2644973043770733, 
+        "percent_gain": 0.08264497304377727, 
+        "symbol": "MAMS", 
+        "true_pos": 8, 
+        "false_pos": 11, 
+        "accuracy": 0.42105263157894735
+    }, 
+    {
+        "total_gain": -38.525737704450876, 
+        "percent_gain": -0.38525737704451224, 
+        "symbol": "ENDP", 
+        "true_pos": 7, 
+        "false_pos": 10, 
+        "accuracy": 0.4117647058823529
+    }, 
+    {
+        "total_gain": -58.748457449826674, 
+        "percent_gain": -0.58748457449826486, 
+        "symbol": "TVIX", 
+        "true_pos": 20, 
+        "false_pos": 29, 
+        "accuracy": 0.40816326530612246
+    }, 
+    {
+        "total_gain": -30.062478729296345, 
+        "percent_gain": -0.30062478729295794, 
+        "symbol": "GSL", 
+        "true_pos": 11, 
+        "false_pos": 16, 
+        "accuracy": 0.4074074074074074
+    }, 
+    {
+        "total_gain": -1.6638906800217228, 
+        "percent_gain": -0.016638906800214848, 
+        "symbol": "USLV", 
+        "true_pos": 6, 
+        "false_pos": 9, 
+        "accuracy": 0.4
+    }, 
+    {
+        "total_gain": -10.803405762773764, 
+        "percent_gain": -0.10803405762773721, 
+        "symbol": "GOLD", 
+        "true_pos": 2, 
+        "false_pos": 3, 
+        "accuracy": 0.4
+    }, 
+    {
+        "total_gain": -1.9422710209455545, 
+        "percent_gain": -0.019422710209460181, 
+        "symbol": "FLML", 
+        "true_pos": 2, 
+        "false_pos": 3, 
+        "accuracy": 0.4
+    }, 
+    {
+        "total_gain": -5.5790907627779234, 
+        "percent_gain": -0.055790907627784048, 
+        "symbol": "ERIC", 
+        "true_pos": 2, 
+        "false_pos": 3, 
+        "accuracy": 0.4
+    }, 
+    {
+        "total_gain": -3.3515842741235247, 
+        "percent_gain": -0.033515842741238533, 
+        "symbol": "ALV", 
+        "true_pos": 2, 
+        "false_pos": 3, 
+        "accuracy": 0.4
+    }, 
+    {
+        "total_gain": -18.847194708912866, 
+        "percent_gain": -0.18847194708913051, 
+        "symbol": "PACD", 
+        "true_pos": 21, 
+        "false_pos": 32, 
+        "accuracy": 0.39622641509433965
+    }, 
+    {
+        "total_gain": 11.288124046212033, 
+        "percent_gain": 0.1128812404621149, 
+        "symbol": "GLBS", 
+        "true_pos": 32, 
+        "false_pos": 51, 
+        "accuracy": 0.3855421686746988
+    }, 
+    {
+        "total_gain": -23.238439268694492, 
+        "percent_gain": -0.23238439268694622, 
+        "symbol": "HZNP", 
+        "true_pos": 5, 
+        "false_pos": 8, 
+        "accuracy": 0.38461538461538464
+    }, 
+    {
+        "total_gain": -22.479769498186215, 
+        "percent_gain": -0.22479769498185975, 
+        "symbol": "CGG", 
+        "true_pos": 11, 
+        "false_pos": 18, 
+        "accuracy": 0.3793103448275862
+    }, 
+    {
+        "total_gain": -6.1974774456721207, 
+        "percent_gain": -0.061974774456718951, 
+        "symbol": "ANW", 
+        "true_pos": 3, 
+        "false_pos": 5, 
+        "accuracy": 0.375
+    }, 
+    {
+        "total_gain": -29.340159123230478, 
+        "percent_gain": -0.2934015912323007, 
+        "symbol": "TOPS", 
+        "true_pos": 18, 
+        "false_pos": 31, 
+        "accuracy": 0.3673469387755102
+    }, 
+    {
+        "total_gain": -5.1169116853998275, 
+        "percent_gain": -0.051169116853999608, 
+        "symbol": "XIV", 
+        "true_pos": 2, 
+        "false_pos": 4, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -1.3298823293407622, 
+        "percent_gain": -0.013298823293406148, 
+        "symbol": "WMGI", 
+        "true_pos": 1, 
+        "false_pos": 2, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -1.9549302055256703, 
+        "percent_gain": -0.019549302055255069, 
+        "symbol": "VIP", 
+        "true_pos": 1, 
+        "false_pos": 2, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": 0.27688720489641128, 
+        "percent_gain": 0.002768872048974913, 
+        "symbol": "TEF", 
+        "true_pos": 1, 
+        "false_pos": 2, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -11.311968223148142, 
+        "percent_gain": -0.11311968223147728, 
+        "symbol": "SBLK", 
+        "true_pos": 12, 
+        "false_pos": 24, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": 0.42487338347928016, 
+        "percent_gain": 0.0042487338347996229, 
+        "symbol": "PSO", 
+        "true_pos": 2, 
+        "false_pos": 4, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -1.0303422375818627, 
+        "percent_gain": -0.010303422375823601, 
+        "symbol": "PHG", 
+        "true_pos": 1, 
+        "false_pos": 2, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -7.8690057341736974, 
+        "percent_gain": -0.078690057341734843, 
+        "symbol": "NNA", 
+        "true_pos": 1, 
+        "false_pos": 2, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -0.47089983239493449, 
+        "percent_gain": -0.0047089983239545496, 
+        "symbol": "MNK", 
+        "true_pos": 1, 
+        "false_pos": 2, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -1.1695922966482613, 
+        "percent_gain": -0.011695922966481476, 
+        "symbol": "ING", 
+        "true_pos": 1, 
+        "false_pos": 2, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -4.9283412711210985, 
+        "percent_gain": -0.049283412711209618, 
+        "symbol": "FCAU", 
+        "true_pos": 1, 
+        "false_pos": 2, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -3.9894963763217675, 
+        "percent_gain": -0.039894963763220659, 
+        "symbol": "CBI", 
+        "true_pos": 1, 
+        "false_pos": 2, 
+        "accuracy": 0.3333333333333333
+    }, 
+    {
+        "total_gain": -5.0869508098257938, 
+        "percent_gain": -0.050869508098261296, 
+        "symbol": "DRYS", 
+        "true_pos": 26, 
+        "false_pos": 54, 
+        "accuracy": 0.325
+    }, 
+    {
+        "total_gain": 25.343192456655743, 
+        "percent_gain": 0.2534319245665495, 
+        "symbol": "WMGIZ", 
+        "true_pos": 6, 
+        "false_pos": 13, 
+        "accuracy": 0.3157894736842105
+    }, 
+    {
+        "total_gain": -6.0791147219479171, 
+        "percent_gain": -0.060791147219474428, 
+        "symbol": "UGLD", 
+        "true_pos": 2, 
+        "false_pos": 5, 
+        "accuracy": 0.2857142857142857
+    }, 
+    {
+        "total_gain": -4.0757548597684945, 
+        "percent_gain": -0.040757548597680771, 
+        "symbol": "AIXG", 
+        "true_pos": 2, 
+        "false_pos": 5, 
+        "accuracy": 0.2857142857142857
+    }, 
+    {
+        "total_gain": -9.3169005082472722, 
+        "percent_gain": -0.093169005082471834, 
+        "symbol": "TVIZ", 
+        "true_pos": 4, 
+        "false_pos": 11, 
+        "accuracy": 0.26666666666666666
+    }, 
+    {
+        "total_gain": 0.061810877627067384, 
+        "percent_gain": 0.00061810877627355154, 
+        "symbol": "VIIZ", 
+        "true_pos": 1, 
+        "false_pos": 3, 
+        "accuracy": 0.25
+    }, 
+    {
+        "total_gain": -10.536454431190577, 
+        "percent_gain": -0.10536454431190334, 
+        "symbol": "LBTYB", 
+        "true_pos": 2, 
+        "false_pos": 7, 
+        "accuracy": 0.2222222222222222
+    }, 
+    {
+        "total_gain": -8.6460824596124439, 
+        "percent_gain": -0.086460824596124031, 
+        "symbol": "DHT", 
+        "true_pos": 1, 
+        "false_pos": 5, 
+        "accuracy": 0.16666666666666666
+    }, 
+    {
+        "total_gain": -4.360160183703556, 
+        "percent_gain": -0.043601601837039983, 
+        "symbol": "ZIV", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": -1.5338285714278754, 
+        "percent_gain": -0.015338285714283639, 
+        "symbol": "XL", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": -0.42181479094688257, 
+        "percent_gain": -0.004218147909473835, 
+        "symbol": "WPPGY", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "WLTW", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "VTTI", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -1.2053718170263892, 
+        "percent_gain": -0.012053718170268457, 
+        "symbol": "UN", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": -1.5137934779068019, 
+        "percent_gain": -0.015137934779063666, 
+        "symbol": "UL", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "UBS", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "TNP^D", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "TNP^C", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "TNP^B", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "TLND", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -4.4029336958465137, 
+        "percent_gain": -0.044029336958462117, 
+        "symbol": "TEL", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "TEAM", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "TAPR", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -0.31148765732723405, 
+        "percent_gain": -0.0031148765732735839, 
+        "symbol": "SYT", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "STPP", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -2.7448933752602898, 
+        "percent_gain": -0.027448933752605154, 
+        "symbol": "STM", 
+        "true_pos": 0, 
+        "false_pos": 2, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "STLRW", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "STLRU", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "STLR", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -1.4604754559259163, 
+        "percent_gain": -0.014604754559255362, 
+        "symbol": "ST", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": -0.85107289659208618, 
+        "percent_gain": -0.0085107289659158702, 
+        "symbol": "SNN", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "SMMT", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "SLVO", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "SLB", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -1.2314139953086851, 
+        "percent_gain": -0.012314139953084613, 
+        "symbol": "SHPG", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "SBLKL", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -0.31009303788778197, 
+        "percent_gain": -0.003100930378874267, 
+        "symbol": "SAP", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "SAN^I", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "SAN^C", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "SAN^B", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "SAN^A", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "RIGP", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -0.44918026104278397, 
+        "percent_gain": -0.0044918026104290298, 
+        "symbol": "RELX", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "RBS^S", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "RBS^L", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "RBS^H", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "RBS^F", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "QURE", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "QTNT", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "PXS", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "PUK^A", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "PUK^", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "PTHN", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "PRQR", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "PNR", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "PIRS", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "OMAM", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "OMAA", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "OEC", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "OASM", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "NW^C", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -0.34897891887158039, 
+        "percent_gain": -0.003489789188715342, 
+        "symbol": "NVS", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "NVET", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "NVCR", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -2.6444807559073524, 
+        "percent_gain": -0.026444807559078409, 
+        "symbol": "NLSN", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "NBRV", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -0.2747229853484896, 
+        "percent_gain": -0.0027472298534836348, 
+        "symbol": "MYL", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "MTP", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "MTLS", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "MTD", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "MRUS", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "MIME", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "MANU", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "LYB", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "LIVN", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "LILAK", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "LILA", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "LENS", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -0.27529249827966851, 
+        "percent_gain": -0.0027529249827962232, 
+        "symbol": "JHX", 
+        "true_pos": 0, 
+        "false_pos": 2, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": -1.0263460701025906, 
+        "percent_gain": -0.010263460701021021, 
+        "symbol": "JAZZ", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "ISP", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "ISG", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "ISF", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "INZ", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -3.0628666560223792, 
+        "percent_gain": -0.030628666560228446, 
+        "symbol": "INXN", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "INNL", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "HSEB", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "HSEA", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "HSBC^A", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "GSL^B", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -0.53672112531239691, 
+        "percent_gain": -0.0053672112531266691, 
+        "symbol": "GRMN", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "GLPG", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "GLDI", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "GBLIZ", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -2.2632277946813701, 
+        "percent_gain": -0.02263227794681022, 
+        "symbol": "GBLI", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "FWP", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -1.6561514195582276, 
+        "percent_gain": -0.01656151419557883, 
+        "symbol": "FLY", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "FLAT", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "FCAM", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "EVAR", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "EURN", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -3.3638635031456943, 
+        "percent_gain": -0.033638635031452147, 
+        "symbol": "ETN", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "EARS", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DXB", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DTYL", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DTUL", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DTK", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DSX^B", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DSXN", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DOX", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -6.9136172765447554, 
+        "percent_gain": -0.069136172765449366, 
+        "symbol": "DLPH", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DLNG^A", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DLBL", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DFVL", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DEO", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "DBVT", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "CYAD", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "CRSP", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "CNV", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "CMRE^D", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "CMRE^C", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "CMRE^B", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -9.9485269279120985, 
+        "percent_gain": -0.099485269279120381, 
+        "symbol": "CMPR", 
+        "true_pos": 0, 
+        "false_pos": 2, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "CLLS", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -6.0458866820899857, 
+        "percent_gain": -0.060458866820900514, 
+        "symbol": "CLB", 
+        "true_pos": 0, 
+        "false_pos": 2, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "CB", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -0.13861546101361455, 
+        "percent_gain": -0.0013861546101390232, 
+        "symbol": "BUD", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": -1.368172729446087, 
+        "percent_gain": -0.013681727294456714, 
+        "symbol": "BTI", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "BCS^D", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "BCS^A", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "AWH", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "AVV.CL", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "ASND", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "AMFW", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -3.9829889424981957, 
+        "percent_gain": -0.039829889424980447, 
+        "symbol": "AGRO", 
+        "true_pos": 0, 
+        "false_pos": 2, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "AFMD", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "AEK", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "AEH", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "AED", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "AEB", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "ADAP", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -1.170524106692028, 
+        "percent_gain": -0.011705241066917171, 
+        "symbol": "ACN", 
+        "true_pos": 0, 
+        "false_pos": 1, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "ACIU", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "ABY", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }, 
+    {
+        "total_gain": -1.4212609989735938, 
+        "percent_gain": -0.014212609989738834, 
+        "symbol": "ABB", 
+        "true_pos": 0, 
+        "false_pos": 2, 
+        "accuracy": 0.0
+    }, 
+    {
+        "total_gain": 0.0, 
+        "percent_gain": 0.0, 
+        "symbol": "AAAP", 
+        "true_pos": 0, 
+        "false_pos": 0, 
+        "accuracy": 0
+    }
+]
