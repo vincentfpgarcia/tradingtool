@@ -1,6 +1,14 @@
-# from yahoo_finance import Share
+from yahoo_finance import Share
 # from pprint import pprint
 import dataset
+
+
+# share = Share('OHGI')
+# history = share.get_historical('2013-01-01', '2016-12-31')
+# for day in history:
+#   # print day
+#   print '%s : %s -> %s' % (day['Date'], day['Open'], day['Close'])
+# exit()
 
 # X, y = dataset.create_learning_data()
 # print X.shape
@@ -17,7 +25,11 @@ import dataset
 #     print '%f, ' % b, 
 #   print
 
-print dataset.get_symbol_list()
+# print dataset.get_symbol_list()
+dataset.create_stock_history()
+# dataset.create_global_dataset()
+
+# dataset.create_learning_data()
 
 
 # stock = Share('CRTO')
