@@ -7,13 +7,9 @@ import os
 import csv
 import constants
 
-# Paths
-STOCK_HISTORY_PATH = 'data/stock_history.json'
-DATASET_PATH       = 'data/dataset.json'
-
 # Structure that will be used to store the global dataset and avoid to reload
 # it over and over
-data = None
+dataset = None
 
 
 
@@ -35,7 +31,11 @@ def get_symbol_list():
 
 def create_stock_history():
 
-  print 'Creating global dataset'
+  # If the file already exist, do nothing
+  if os.path.exists(constants.STOCK_HISTORY_PATH):
+    return
+
+  print 'Creating stock history'
 
   # Create the list of stock symbols
   symbols = get_symbol_list()
@@ -48,9 +48,14 @@ def create_stock_history():
       share = Share(symbol)
       # data[symbol] = share.get_historical('2013-01-01', '2016-12-31')
       history = share.get_historical('2013-01-01', '2016-12-31')
+      valid   = True
       for day in history:
         if not ('Open' in day and 'Close' in day):
           print symbol
+          valid = False
+          break
+      if valid:
+        data[symbol] = history
     except:
       continue
 
@@ -64,12 +69,15 @@ def create_stock_history():
 
 def create_global_dataset():
 
+  # If the file already exist, do nothing
+  if os.path.exists(constants.GLOBAL_DATASET_PATH):
+    return
+
   print 'Creating global dataset :',
 
   # Load the JSON containing stock history
-  if not os.path.exists(STOCK_HISTORY_PATH):
-    create_stock_history()
-  data = json.load(open(STOCK_HISTORY_PATH))
+  create_stock_history()
+  data = json.load(open(constants.STOCK_HISTORY_PATH))
 
   # Set the random seed
   random.seed(datetime.now())
@@ -80,12 +88,6 @@ def create_global_dataset():
   # Go through all symbols
   for symbol in data:
 
-    # Ignore VIXX symbol
-    if symbol=='VIIX':
-      continue
-
-    # print 'Processing ' + symbol
-
     # Values for the considered symbol
     share = data[symbol]
 
@@ -95,10 +97,6 @@ def create_global_dataset():
       x = [float(share[curr_day]['Open'])]
       for j in range(1, constants.DAY_IN_PAST+1):
         past_day = curr_day + j
-        # print share[past_day]
-        if not 'Close' in share[past_day]:
-          print symbol
-          print share[past_day]
         x.insert(0, float(share[past_day]['Close']))
         x.insert(0, float(share[past_day]['Open']))
 
@@ -114,7 +112,7 @@ def create_global_dataset():
       data2[date][symbol] = {'X': x, 'y':y}
 
   # Save the JSON file
-  with open(DATASET_PATH, 'w') as file:
+  with open(constants.GLOBAL_DATASET_PATH, 'w') as file:
       json.dump(data2, file)
 
   print ' done'
@@ -123,14 +121,13 @@ def create_global_dataset():
 
 def create_learning_data():
   
-  # Create the global dataset if needed
-  if not os.path.exists(DATASET_PATH):
-    create_global_dataset()
+  # Create the global dataset
+  create_global_dataset()
 
   print 'Creating learning dataset :', 
 
   # Load the global dataset
-  data = json.load(open(DATASET_PATH))
+  data = json.load(open(constants.GLOBAL_DATASET_PATH))
   keys = sorted(data.keys())
 
   # Get X and y data
@@ -156,14 +153,13 @@ def create_learning_data():
 
 def create_testing_data():
   
-  # Create the global dataset if needed
-  if not os.path.exists(DATASET_PATH):
-    create_global_dataset()
+  # Create the global dataset
+  create_global_dataset()
 
   print 'Creating testing dataset :', 
 
   # Load the global dataset
-  data = json.load(open('data/dataset.json'))
+  data = json.load(open(constants.GLOBAL_DATASET_PATH))
   keys = sorted(data.keys())
 
   # Get X and y data
@@ -188,30 +184,32 @@ def create_testing_data():
 
 
 def create_testing_data_for_symbol(symbol):
-  global data
+  global dataset
 
-  # Create the global dataset if needed
-  if not os.path.exists(DATASET_PATH):
-    create_global_dataset()
+  # Create the global dataset
+  create_global_dataset()
 
   # Load the global dataset
-  if data is None:
-    data = json.load(open('data/dataset.json'))
+  if dataset is None:
+    dataset = json.load(open(constants.GLOBAL_DATASET_PATH))
 
-  # Sort data
-  keys = sorted(data.keys())
+  # Sort dataset
+  keys = sorted(dataset.keys())
 
   # Get X and y data
   X = []
   y = []
   for i in range(int(len(keys)*constants.TRAINING_SIZE), len(keys)):
     date = keys[i]
-    if symbol in data[date]:
-      X.append(data[date][symbol]['X'])
-      y.append(data[date][symbol]['y'])
+    if symbol in dataset[date]:
+      X.append(dataset[date][symbol]['X'])
+      y.append(dataset[date][symbol]['y'])
 
+  # Manage the case where X is empty
   if len(X) == 0:
-    return [], []
+    print 'Error with stock %s' % symbol
+    return np.empty(0), np.empty(0)
+
   # Convert as Numpy arrays and reshape for Keras
   X = np.array(X)
   y = np.array(y)

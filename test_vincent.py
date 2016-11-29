@@ -26,10 +26,16 @@ import dataset
 #   print
 
 # print dataset.get_symbol_list()
-dataset.create_stock_history()
+# dataset.create_stock_history()
 # dataset.create_global_dataset()
 
-# dataset.create_learning_data()
+# X, y = dataset.create_learning_data()
+# X, y = dataset.create_testing_data()
+X, y = dataset.create_testing_data_for_symbol('AAPL')
+print X.shape
+print y.shape
+print X
+print y
 
 
 # stock = Share('CRTO')
