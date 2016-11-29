@@ -34,12 +34,15 @@ def create_vector(symbol, current_price):
 	from yahoo_finance import Share
 	share = Share(symbol)
 	data = share.get_historical('2016-09-01', '2016-12-31')
-	for i in range(0, 31):
-		result.append(data[-1 + i]["Open"])
-		result.append(data[-1 + i]["Close"])
+
 	result.append(current_price)
+
+	for i in range(0, 31):
+		result.insert(0, data[-1 - i]["Close"])
+		result.insert(0, data[-1 - i]["Open"])
+	
 	result = np.array([[result]])
-	return result
+	return result, data
 
 def invest(current_price, sym, model, accuracy):
 	global investment
@@ -49,29 +52,46 @@ def invest(current_price, sym, model, accuracy):
 		"price":current_price,
 		"date":str(datetime.datetime.now())
 	}
+	investment.append(result)
 
-	acc = get_symbol_accuracy(accuracy, sym)
-	if acc < 0.5:
-		print "accuracy inf 0.5"
-		return
 	print "create vector"
-	X = create_vector(sym, current_price)
+	try:
+		X, raw_data = create_vector(sym, current_price)
+	except:
+		result["error"] = "error in create_vector"
+	result["raw_data"] = raw_data
 	print "shape:", X.shape
-	prediction = model.predict(X)
-	if prediction[0][0] > current_price * 1.02:
+	prediction = float(model.predict(X)[0][0])
+	result["prediction"] = prediction
+	print "prediction:", prediction, "current_price:", current_price
+	result["investment"] = False
+	if prediction > current_price * 1.02:
 		print "invest in", sym, "for", current_price
 		result["investment"] = True
-	result["investment"] = False
-	investment.append(result)
+	investment[-1] = result
+
+
+def keep_good_accuracy_symbols(symbols, accuracy):
+	result = []
+	for sym in symbols:
+		acc = get_symbol_accuracy(accuracy, sym)
+		if acc < 0.5:
+			continue
+		result.append(sym)
+	return result
 
 def main():
 	model = load_model(sys.argv[1])
 	f = open("data/accuracy.json")
 	accuracy = json.loads(f.read())
 
+	symbols = get_symbol_list()
+	symbols = keep_good_accuracy_symbols(symbols, accuracy)
+	# symbols = symbols[:1]
+
+	print "kept", len(symbols), "symbols"
 	wait_for_opening_time()
 
-	symbols = get_symbol_list()
 	remaining_symbols = []
 	limit = 25
 	while len(symbols) > 0 and limit > 0:
@@ -81,6 +101,7 @@ def main():
 			try:
 				result = getQuotes(sym)[0]
 			except:
+				print "error while request google finance"
 				continue						
 			if result["Index"] != "NASDAQ" and result["Index"] != "NYSE":
 				continue
