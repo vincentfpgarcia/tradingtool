@@ -1,5 +1,6 @@
 import json
 import sys
+import datetime
 from googlefinance import getQuotes
 
 INVESTMENT_VALUE = 100.0
@@ -23,6 +24,7 @@ def check_sell(path):
 		if new_price > old_price * 1.02:
 			investment[i]["sold"] = True
 			investment[i]["sell_price"] = new_price
+			investment[i]["sell_date"] = str(datetime.datetime.now())
 	with open(path, "wb") as f:
 		f.write(json.dumps(investment, indent=2))
 
@@ -45,6 +47,7 @@ def sell_all(path):
 		new_price = float(result["LastTradePrice"])
 		investment[i]["sold"] = True
 		investment[i]["sell_price"] = new_price
+		investment[i]["sell_date"] = str(datetime.datetime.now())
 	with open(path, "wb") as f:
 		f.write(json.dumps(investment, indent=2))
 

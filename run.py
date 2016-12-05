@@ -32,10 +32,10 @@ def check_sales(closing):
 def wait_for_opening_time():
 	print "wait for opening time"
 	now = datetime.datetime.now()
-	target = datetime.datetime(now.year, now.month, now.day, 9, 31, 0)
+	target = datetime.datetime(now.year, now.month, now.day, 15, 31, 0)
 	wait = target - now
 	waitTime = wait.total_seconds()
-	max_wait = 5
+	max_wait = 600
 	print "current date:", now
 	print "target date:", target
 	print "have to wait for:", waitTime
@@ -53,10 +53,10 @@ def wait_for_opening_time():
 def wait_for_closing_time():
 	print "wait for closing time"
 	now = datetime.datetime.now()
-	target = datetime.datetime(now.year, now.month, now.day, 9, 31, 0)
+	target = datetime.datetime(now.year, now.month, now.day, 21, 55, 0)
 	wait = target - now
 	waitTime = wait.total_seconds()
-	max_wait = 5
+	max_wait = 600
 	print "current date:", now
 	print "target date:", target
 	print "have to wait for:", waitTime
@@ -139,7 +139,7 @@ def main():
 
 	symbols = get_symbol_list()
 	symbols = keep_good_accuracy_symbols(symbols, accuracy)
-	symbols = symbols[:10]
+	# symbols = symbols[:10]
 
 	print "kept", len(symbols), "symbols"
 	wait_for_opening_time()
@@ -161,8 +161,8 @@ def main():
 				continue
 			d = datetime.datetime.strptime(result["LastTradeDateTime"], '%Y-%m-%dT%H:%M:%SZ')
 			now = datetime.datetime.now()
-			# if now.day == d.day and now >= d:
-			if now >= d:
+			if now.day == d.day and now >= d:
+			# if now >= d:
 				try:
 					invest(float(result["LastTradePrice"]), sym, model, accuracy)
 				except:
