@@ -31,11 +31,11 @@ import dataset
 
 # X, y = dataset.create_learning_data()
 # X, y = dataset.create_testing_data()
-X, y = dataset.create_testing_data_for_symbol('AAPL')
-print X.shape
-print y.shape
-print X
-print y
+# X, y = dataset.create_testing_data_for_symbol('AAPL')
+# print X.shape
+# print y.shape
+# print X
+# print y
 
 
 # stock = Share('CRTO')
