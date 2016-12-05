@@ -10,7 +10,10 @@ def main():
 	money = 0
 	invested = 0
 	for invest in investment:
-		if invest["investment"] is False:
+		try:
+			if invest["investment"] is False:
+				continue
+		except:
 			continue
 		invested += INVESTMENT_VALUE
 		money -= INVESTMENT_VALUE
@@ -21,7 +24,7 @@ def main():
 			continue
 		new_price = float(result["LastTradePrice"])
 		old_price = invest["price"]
-		print "[" + str(invest["symbol"]) + "]", "new price:", new_price, "old price", old_price
+		print "[" + str(invest["symbol"]) + "]", "new price:", new_price, "old price", old_price, "--", new_price > old_price * 1.02
 		money += new_price / old_price * INVESTMENT_VALUE
 	print "money:", money
 	print "invested:", invested
