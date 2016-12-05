@@ -10,8 +10,15 @@ INITIAL_CAPITAL = 10000.0
 PERCENT_OF_CAPITAL_PER_TRANSACTION = 10.0
 TRANSACTION_FEE = 0
 
+def getSymbolAccuracy(data, sym):
+	for d in data:
+		if d["symbol"] == sym:
+			return d["accuracy"]
+	return -1
+
 def main():
 	model = load_model(sys.argv[1])
+
 	X, Y = create_testing_data()
 	print "X shape:", X.shape
 	print "Y shape:", Y.shape
